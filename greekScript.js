@@ -1,5 +1,3 @@
-
-
 var voices = ["Attivo", "Medio", "Passivo"]
 
 var modes = [
@@ -41,6 +39,7 @@ cases = ["Nominativo", "Genitivo", "Dativo", "Accusativo"];
 genders = ["Maschile", "Femminile"];
 
 verbs = ["λυω", "πεμπω", "παρτιζω", "κραζω", "βλεπω", "γραφω", "κωλυω", "ονομαζω", "φυλασσω", "ταρασσω", "αρχω", "ραντιζω", "νιπτω", "απολυω"]
+
 var givingTask = function () {
 var vc = Math.floor(Math.random() * voices.length);
 var md = Math.floor(Math.random() * modes.length);
@@ -88,4 +87,3 @@ vrb = Math.floor(Math.random() * verbs.length);
 var tsk = document.getElementById('myTask');
 tsk.innerHTML = conjFull + "<br/>" + verb; 
 };
-
